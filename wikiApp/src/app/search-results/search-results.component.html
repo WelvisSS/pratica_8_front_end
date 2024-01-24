@@ -1,0 +1,5 @@
+<div *ngFor="let result of results">
+    <h2>{{ result.title }}</h2>
+    <p [innerHTML]="result.snippet | highlight: term"></p>
+    <a href="https://en.wikipedia.org/?curid={{ result.pageid }}">Leia mais...</a>
+</div>
